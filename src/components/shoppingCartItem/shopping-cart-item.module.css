@@ -1,0 +1,15 @@
+.shopping_cart_item_container{
+    @apply flex flex-row items-center  py-5 border-b border-gray-300
+}
+.product_image{
+    @apply w-28 h-28
+}
+.product_info{
+    @apply flex flex-col  justify-center
+}
+.product_name{
+    @apply text-sm font-bold
+}
+.product_code{
+    @apply text-xs text-gray-300
+}

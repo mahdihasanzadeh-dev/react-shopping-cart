@@ -1,0 +1,4 @@
+.payment_container{
+    background-color: #41424a;
+    @apply col-span-1 w-full h-full rounded-md p-4
+}
