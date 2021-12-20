@@ -1,11 +1,11 @@
 .shopping_cart_item_container{
-    @apply grid grid-cols-5 items-center  py-5 border-b border-gray-300 
+    @apply flex flex-col sm:grid sm:grid-cols-5 items-center  py-5 border-b border-gray-300 relative
 }
 .product_image{
-    @apply w-28 h-28
+    @apply w-28 h-28 
 }
 .product_info{
-    @apply flex flex-col  justify-center
+    @apply flex flex-col  justify-center mt-6 sm:mt-0
 }
 .product_name{
     @apply text-sm font-bold
@@ -14,7 +14,7 @@
     @apply text-xs text-gray-300
 }
 .cart_item_quantity{
-    @apply  flex flex-row items-center justify-center
+    @apply  flex flex-row items-center justify-center mt-6 sm:mt-0
 }
 .quantity{
     @apply mx-1 border-gray-300 border py-1 px-3  rounded text-xs text-gray-300
@@ -51,11 +51,11 @@
     cursor: pointer;
   }
   .cart_item_price{
-      @apply flex flex-row justify-end font-bold text-sm text-center
+      @apply flex flex-row justify-end font-bold text-sm text-center mt-6 sm:mt-0
   }
   .dollar_sign{
       @apply relative bottom-1 right-1 text-xs
   }
   .remove_cart_item_button {
-    @apply text-2xl text-right cursor-pointer
+    @apply  text-2xl text-right cursor-pointer mt-6 sm:mt-0
   }
