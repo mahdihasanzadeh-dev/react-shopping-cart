@@ -1,0 +1,31 @@
+.form{
+    @apply flex flex-col mt-2
+}
+.form span{
+    @apply mt-1 text-xs text-red-600
+}
+.form label{
+    @apply text-xs text-gray-300 font-black mt-6
+}
+.form input, .date_input_container select{
+    @apply bg-transparent mt-2 text-white border-b pb-2 border-gray-50 outline-none text-sm font-normal
+}
+.form .expiration_container{
+    @apply grid grid-cols-3 items-center gap-3 justify-center
+}
+.date_container{
+    @apply flex flex-col col-span-2
+}
+.date_input_container{
+    @apply grid grid-cols-2 gap-2
+}
+.cvv_container{
+    @apply flex flex-col
+}
+.date_input_container select * {
+    background-color: #41424a;
+}
+.form button {
+    background-color: #2d7aed;
+    @apply w-full h-full p-3 mt-9 text-white rounded font-semibold text-xl
+}  

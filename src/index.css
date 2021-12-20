@@ -53,9 +53,7 @@ body {
 	width: 1336px;
 	@apply  mx-auto p-8  h-full md:w-full lg:w-10/12 
 }
-.redText{
-    @apply mt-2 text-xs text-red-600
-}
+
 @media only screen and (max-width: 1080px) {
 	.row {
 	  width: 98% !important ;

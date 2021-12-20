@@ -1,4 +1,4 @@
-import { Heading } from '..'
+import { Heading,CardType,CardInfo } from '..'
 import classes from './payment.module.css'
 const Payment:React.FC = () => {
     return (
@@ -7,6 +7,8 @@ const Payment:React.FC = () => {
                 title="Card Details"
                 styles={{color:'#fff'}}
              />
+            <CardType />
+            <CardInfo />
         </div>
     )
 }

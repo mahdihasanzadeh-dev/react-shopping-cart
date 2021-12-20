@@ -1,0 +1,37 @@
+.title{
+    @apply text-gray-300 text-xs font-semibold
+}
+.card_type_container{
+    @apply flex flex-row items-center  relative
+}
+.visa_card_container{
+    background-color: #8e8e97;
+    @apply w-9/12 relative p-3 -left-10 rounded flex flex-col mt-4
+}
+.card_name{
+    @apply text-white font-black
+}
+.card_numbers{
+    @apply grid grid-cols-4 gap-4 text-white mt-5
+}
+.card_owner{
+    @apply flex flex-row items-center justify-between text-white text-xs mt-3
+}
+.master_card_container{
+    @apply relative right-1 flex flex-col 
+}
+.circles_container{
+    @apply flex flex-row justify-center items-center
+}
+.circles_container div{
+    @apply w-8 h-8 rounded-full opacity-80
+}
+.red_circle{
+    @apply bg-red-400 
+}
+.orange_circle{
+    @apply bg-orange-400 relative right-2
+}
+.master_card_container span{
+    @apply text-white text-sm
+}
