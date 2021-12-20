@@ -6,7 +6,7 @@ type HeadingProps ={
 }
 const Heading:React.FC<HeadingProps> = ({title, styles}) => {
     return (
-        <h2 className={classes.heading} style={styles}>
+        <h2 className={classes.heading} style={styles} data-testid="h2tag">
             {title}
         </h2>
     )
