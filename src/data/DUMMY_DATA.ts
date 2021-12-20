@@ -9,7 +9,7 @@ export const DUMMY_DATA =[
     },
     {
         productId:2,
-        productImage:require('../assets/images/momo.png'),
+        productImage:require('../assets/images/spicy.png'),
         productName:'Spicy Mexican potatoes',
         productCode:'#4231648',
         productQuantity:1,
@@ -17,7 +17,7 @@ export const DUMMY_DATA =[
     },
     {
         productId:3,
-        productImage:require('../assets/images/momo.png'),
+        productImage:require('../assets/images/breakfast.png'),
         productName:'Breakfast',
         productCode:'#4231648',
         productQuantity:1,

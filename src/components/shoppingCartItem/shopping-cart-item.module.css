@@ -1,5 +1,5 @@
 .shopping_cart_item_container{
-    @apply flex flex-row items-center  py-5 border-b border-gray-300
+    @apply grid grid-cols-5 items-center  py-5 border-b border-gray-300 
 }
 .product_image{
     @apply w-28 h-28
@@ -13,3 +13,49 @@
 .product_code{
     @apply text-xs text-gray-300
 }
+.cart_item_quantity{
+    @apply  flex flex-row items-center justify-center
+}
+.quantity{
+    @apply mx-1 border-gray-300 border py-1 px-3  rounded text-xs text-gray-300
+}
+.plus {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background:
+      linear-gradient(#fff,#fff),
+      linear-gradient(#fff,#fff),
+      #000;
+    background-position:center;
+    background-size: 50% 2px,2px 50%; /*thickness = 2px, length = 50% (25px)*/
+    background-repeat:no-repeat;
+    cursor: pointer;
+  }
+ 
+  .alt {
+    background:
+      linear-gradient(#000,#000),
+      linear-gradient(#000,#000);
+    background-position:center;
+    background-size: 50% 2px,2px 50%; /*thickness = 2px, length = 50% (25px)*/
+    background-repeat:no-repeat;
+  }
+  .altMines{
+    background:
+        linear-gradient(#000,#000),
+        linear-gradient(#000,#000);
+    background-position:center;
+    background-size: 50% 2px,2px 10%; /*thickness = 2px, length = 50% (25px)*/
+    background-repeat:no-repeat;
+    cursor: pointer;
+  }
+  .cart_item_price{
+      @apply flex flex-row justify-end font-bold text-sm text-center
+  }
+  .dollar_sign{
+      @apply relative bottom-1 right-1 text-xs
+  }
+  .remove_cart_item_button {
+    @apply text-2xl text-right cursor-pointer
+  }

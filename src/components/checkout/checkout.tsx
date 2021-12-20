@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import {ShoppingCartContext} from '../../context/shopping-cart-context'
-import { Heading, ShoppingCartItems } from '..'
+import { Heading, ShoppingCartItems,Bill } from '..'
 import classes from './checkout.module.css'
 const Checkout:React.FC = () => {
     const context = useContext(ShoppingCartContext)
@@ -11,6 +11,9 @@ const Checkout:React.FC = () => {
             />
             <ShoppingCartItems
                 items={context.products}
+            />
+            <Bill 
+                totalShoppingCart={context.totalShoppingCart}
             />
         </div>
     )
