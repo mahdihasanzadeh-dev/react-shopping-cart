@@ -1,9 +1,8 @@
+import React from 'react'
 import { ShoppingCartItem } from '..'
-import {ProductInterface} from '../../types/products'
+import {ShoppingCartItemsProps} from '../../types/products'
 import classes from './shopping-cart-items.module.css'
-type ShoppingCartItemsProps={
-    items : ProductInterface [] | []
-}
+
 const ShoppingCartItems:React.FC<ShoppingCartItemsProps> = ({items}) => {
     return (
         <div className={classes.shopping_cart_items_container}>
@@ -19,4 +18,4 @@ const ShoppingCartItems:React.FC<ShoppingCartItemsProps> = ({items}) => {
     )
 }
 
-export default ShoppingCartItems
+export default React.memo(ShoppingCartItems)

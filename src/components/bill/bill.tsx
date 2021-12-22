@@ -1,3 +1,4 @@
+import React from 'react'
 import classes from './bill.module.css'
 type BillProps = {
     totalShoppingCart:()=>number
@@ -20,4 +21,4 @@ const Bill:React.FC<BillProps> = ({totalShoppingCart}) => {
     )
 }
 
-export default Bill
+export default React.memo(Bill)

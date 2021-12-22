@@ -12,4 +12,4 @@ const Heading:React.FC<HeadingProps> = ({title, styles}) => {
     )
 }
 
-export default Heading
+export default React.memo(Heading)

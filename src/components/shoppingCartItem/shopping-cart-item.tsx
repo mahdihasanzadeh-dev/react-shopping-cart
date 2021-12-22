@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import React,{ useContext } from 'react'
 import {ShoppingCartContext} from '../../context/shopping-cart-context'
 import {ProductInterface} from '../../types/products'
 import classes from './shopping-cart-item.module.css'
@@ -32,9 +32,9 @@ const ShoppingCartItem:React.FC<ShoppingCartItemsProps> = ({productInfo}) => {
                 <span className={classes.dollar_sign}>$</span>
                 <span>{(productPrice * productQuantity).toFixed(2)}</span>
            </div>
-           <div className={classes.remove_cart_item_button} onClick={()=>removeFromShoppingCart(productQuantity)}>&times;</div>
+           <div className={classes.remove_cart_item_button} onClick={()=>removeFromShoppingCart(productId)}>&times;</div>
         </div>
     )
 }
 
-export default ShoppingCartItem
+export default React.memo(ShoppingCartItem)

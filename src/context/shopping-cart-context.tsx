@@ -1,16 +1,12 @@
 import React,{ useState} from 'react'
 import {DUMMY_DATA} from '../data/DUMMY_DATA'
-import {ProductInterface} from '../types/products'
-type ShoppingCartContextProps ={
-    children:React.ReactNode
-}
-type ShoppingCartContextType={
-    products:ProductInterface[] | [],
-    totalShoppingCart:()=>number,
-    addQuantity:(id:number)=>void,
-    decreaseQuantity:(id:number)=>void,
-    removeFromShoppingCart:(id:number)=>void
-}
+import {
+    ProductInterface,
+    ShoppingCartContextProps,
+    ShoppingCartContextType
+} from '../types/products'
+
+
 export const ShoppingCartContext = React.createContext({
     products:DUMMY_DATA
 } as ShoppingCartContextType)
@@ -37,7 +33,7 @@ const ShoppingCartContextProvider:React.FC<ShoppingCartContextProps> = ({childre
             setShoppingCartItems(temp)
         }
     }
-    const removeFromShoppingCart = (id:number)=>{
+    const removeFromShoppingCart =(id:number)=>{
         const temp = [...shoppingCartItems]
         const index = temp.findIndex(item=>item.productId===id)
         temp.splice(index,1)
