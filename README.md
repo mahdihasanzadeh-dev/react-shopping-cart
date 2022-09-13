@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# React Shopping Cart 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Shopping Cart Built in React(Typescript) with Context API and Test
 
 ## Available Scripts
 
